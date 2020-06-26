@@ -65,7 +65,6 @@ public class DepartmentFormController implements Initializable{
 			entity = getFormData();
 			service.saveOrUpdate(entity);
 			notifyDataChangeListeners();
-			Alerts.showAlert("Sucess", null, "Save Sucess", AlertType.INFORMATION);
 			Utils.currentStage(event).close();
 			
 		}

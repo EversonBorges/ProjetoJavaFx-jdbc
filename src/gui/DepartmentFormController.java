@@ -66,7 +66,7 @@ public class DepartmentFormController implements Initializable{
 			service.saveOrUpdate(entity);
 			notifyDataChangeListeners();
 			Alerts.showAlert("Sucess", null, "Save Sucess", AlertType.INFORMATION);
-			Utils.currenteStage(event).close();
+			Utils.currentStage(event).close();
 			
 		}
 		catch (ValidationException e) {
@@ -104,7 +104,7 @@ public class DepartmentFormController implements Initializable{
 
 	@FXML
 	public void onBtnCancelAction(ActionEvent event) {
-		Utils.currenteStage(event).close();
+		Utils.currentStage(event).close();
 	}
 	
 	@Override
